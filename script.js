@@ -104,8 +104,8 @@ contactForm.addEventListener("submit", function(e) {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    // Send the structured form data via POST request to the API
-    fetch('https://api.web3forms.com/submit', {
+    // Send the structured form data via POST request to the Formbold API
+    fetch('https://formbold.com/s/3VKLQ', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -114,14 +114,19 @@ contactForm.addEventListener("submit", function(e) {
             body: json
         })
         .then(async (response) => {
-            let res = await response.json();
-            if (response.status == 200) {
+            // Formbold returns a 200 status code on clean submissions
+            if (response.ok) { 
                 // Success State handling
                 alert(`Thank you! Your message has been sent successfully.`);
             } else {
                 // API rejected error handling
-                console.log(res);
-                alert(`Something went wrong: ${res.message}`);
+                try {
+                    let res = await response.json();
+                    console.log(res);
+                    alert(`Something went wrong: ${res.message || 'Submission failed'}`);
+                } catch(e) {
+                    alert("Something went wrong with the submission.");
+                }
             }
         })
         .catch(error => {
