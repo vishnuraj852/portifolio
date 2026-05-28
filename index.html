@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnuraj C R | Portfolio</title>
+    <!-- Modern Tech Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Desktop Top Header Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">VISHNURAJ<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home desktop-only-icon"></i> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Light Mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Unique Floating Mobile Bottom Dock (Hidden on Desktop) -->
+    <div class="mobile-bottom-dock">
+        <a href="#home" class="dock-item active" data-target="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="dock-item" data-target="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </a>
+        <a href="#skills" class="dock-item" data-target="skills">
+            <!-- UPDATED: Using the specified toolbox icon from image_d82da9.png -->
+            <i class="fas fa-toolbox"></i>
+            <span>Skills</span>
+        </a>
+        <a href="#contact" class="dock-item" data-target="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Vishnuraj C R</span></h1>
+            <h2>I am a <span id="dynamic-text"></span><span class="cursor">&nbsp;</span></h2>
+            <p>Building scalable web applications, robust network architectures, and seamless user experiences.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                <a href="#skills" class="btn secondary-btn">View My Skills</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <span class="section-tag">BACKGROUND</span>
+                    <h2 class="section-title-left">About Me</h2>
+                    <p class="about-text-lead">
+                        I am an <strong>MCA graduate</strong> and a passionate <strong>Full-Stack Developer</strong> based in Kochi, Kerala. I thrive on translating complex technical requirements into elegant, high-performing digital environments.
+                    </p>
+                    <p class="about-text-body">
+                        My technical expertise spans both frontend interfaces and server-side logic. Beyond traditional web development, I have a deep analytical interest in technical internet infrastructure, custom network communications, and localized application deployments.
+                    </p>
+                </div>
+                
+                <div class="about-right">
+                    <div class="metric-card">
+                        <div class="metric-num">100%</div>
+                        <div class="metric-detail">
+                            <h4>Clean Code Architecture</h4>
+                            <p>Writing highly maintainable, optimized, and dry structural code solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-num"><i class="fas fa-layer-group"></i></div>
+                        <div class="metric-detail">
+                            <h4>Full-Stack Capabilities</h4>
+                            <p>Handling everything from complex backend systems to modular interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Advanced backend logic, scripting, and structural architecture configurations.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Dynamic frontend interactions, asynchronous logic, and state manipulation.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-django"></i></div>
+                    <h3>Django</h3>
+                    <p>Multi-tenant architectures, RESTful APIs, and secure server deployments.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <p>Component-driven interface development, state hooks, and modular views.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Infrastructure</h3>
+                    <p>Analyzing routing environments, data distribution systems, and localized server handling.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases & Cloud</h3>
+                    <p>Relational SQL design, environment variable provisioning, and serverless hosting pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Connect With Me</h2>
+            <p class="contact-subtitle">Have a professional inquiry or a project idea? Let's connect.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vishnurajcr860@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kochi, Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/vishnuraj852" target="_blank">github.com/vishnuraj852</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+    <input type="hidden" name="access_key" value="6c7f8d2a-7cb7-44ce-b316-b68e14917d7f">
+    
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+    </div>
+    <div class="form-group">
+        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" id="form-submit-btn" class="btn primary-btn btn-block">Send Message</button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Vishnuraj C R. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
